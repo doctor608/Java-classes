@@ -1,8 +1,5 @@
 package com.company;
 
-/**
- * Created by student1 on 28.10.20.
- */
 public class Circle extends Figure {
     float radius;
 
@@ -19,5 +16,17 @@ public class Circle extends Figure {
         return 2 * radius * Math.PI;
     }
 
+    public void move(float dx, float dy) {
+        x = x + dx;
+        y = y + dy;
+    }
+
+    public void resize(float koeff) {
+        radius = radius * koeff;
+    }
+
+    public String toString() {
+        return ("Circle" + "\n" + "Center: " + "(" + x + ", " + y + ")" + "\n" + "Radius: " + radius);
+    }
 
 }

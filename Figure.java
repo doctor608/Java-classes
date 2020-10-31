@@ -1,8 +1,5 @@
 package com.company;
 
-/**
- * Created by student1 on 28.10.20.
- */
 abstract class Figure {
     public float x;
     public float y;
@@ -14,8 +11,6 @@ abstract class Figure {
 
     abstract double getArea();
 
-
     abstract double getPerimeter();
-
 
 }
